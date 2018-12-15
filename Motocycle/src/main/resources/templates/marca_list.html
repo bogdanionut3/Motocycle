@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Motocycle</title>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<ul>
+    <li th:each = "marca: ${marci}">
+        <a th:href="@{|/app/marca/${marca.id}|}" th:text ="${marca.nume}"></th:text></a></li>
+
+</ul>
+
+</body>
+</html>

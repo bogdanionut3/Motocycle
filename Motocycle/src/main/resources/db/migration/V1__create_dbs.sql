@@ -9,10 +9,16 @@ create table persoana(
 );
 
 create table motor(
-  id int AUTO_INCREMENT,
-  marca varchar(50),
-  tip varchar(50),
-  primary key (id)
+        id int AUTO_INCREMENT,
+        marca varchar(50),
+        tip varchar(50),
+        primary key (id)
+  );
+
+create table marca(
+       id int AUTO_INCREMENT,
+       marca varchar(50),
+       primary key (id)
 );
 
 create table echpament(

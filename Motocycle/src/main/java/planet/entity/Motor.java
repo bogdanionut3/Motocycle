@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import javax.persistence.Table;
+import java.util.List;
 
 
 @Entity
@@ -16,17 +17,16 @@ public class Motor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String marca;
-    private String tip;
 
-
+    //private List<Marca> marci;
+    //private List<Tip> tipuri;
 
     @Override
     public String toString() {
         return "Motor{" +
                 "id=" + id +
-                ", marca='" + marca + '\'' +
-                ", tip='" + tip + '\'' +
+              //  ", marci=" + marci +
+              //  ", tipuri=" + tipuri +
                 '}';
     }
 
@@ -38,21 +38,19 @@ public class Motor {
         this.id = id;
     }
 
-    public String getMarca() {
-        return marca;
-    }
+  // public List<Marca> getMarci() {
+        //return marci;
+   // }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
+   // public void setMarci(List<Marca> marci) {
+       // this.marci = marci;
+  //  }
 
-    public String getTip() {
-        return tip;
-    }
+   // public List<Tip> getTipuri() {
+       // return tipuri;
+   // }
 
-    public void setTip(String tip) {
-        this.tip = tip;
-    }
-
-
+   // public void setTipuri(List<Tip> tipuri) {
+     //   this.tipuri = tipuri;
+    //}
 }

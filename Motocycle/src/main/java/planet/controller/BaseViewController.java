@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(value = "/app")
-public class BaseViewController {
+abstract class BaseViewController {
 }

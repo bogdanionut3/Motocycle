@@ -16,13 +16,11 @@
      </span>
 </select>
 
-<select>
-    <span th:each="persoana: ${persons}">
-    <option th:value="${persoana.id}">
-        <span th:text="${persoana.nrTelefon}"></span>
-    </option>
-     </span>
-</select>
+<ul>
+    <li th:each = "marca: ${marci}">
+        <a th:href="@{|/app/marca/${marca.id}|}" th:text ="${marca.marca}"></th:text></a></li>
+
+</ul>
 
 </body>
 </html>
