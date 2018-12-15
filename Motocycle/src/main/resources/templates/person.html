@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Motocycle</title>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<select>
+    <span th:each="persoana: ${persons}">
+    <option th:value="${persoana.id}">
+        <span th:text="${persoana.nume}"></span>
+    </option>
+     </span>
+</select>
+
+<select>
+    <span th:each="persoana: ${persons}">
+    <option th:value="${persoana.id}">
+        <span th:text="${persoana.nrTelefon}"></span>
+    </option>
+     </span>
+</select>
+
+</body>
+</html>
